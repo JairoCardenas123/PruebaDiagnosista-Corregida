@@ -1,5 +1,4 @@
-const { Schema, model } = require('mongoose');
-
+const {MongoClient} = require('mongodb')
 const pacientesSchema = Schema(
   {
     nombre: {

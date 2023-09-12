@@ -1,46 +1,24 @@
+// ObtenerMedicamentos.js
+const { MongoClient } = require('mongodb');
+const { url } = require('../models/Server.js'); // Importa el nombre de la base de datos
 
-const medicamentosSchema = (
-    {
-        nombre: {
-            type: String,
-            required: true,
-            trim: true,
-        },
-        precio: {
-            type: Number,
-            required: true,
-            trim: true,
-        },
-        stock: {
-            type: Number,
-            required: true,
-            trim: true,
-        },
-        fechaExpiracion: {
-            type: String,
-            required: true,
-            trim: true,
-        },
-        proveedor: {
-            type: Array,
-            required: true,
-            trim: true,
-        },
-    },
-    {
-        timestamps: true
-    }
-);
-
-const obtenerMedicamentos = async (req, res) => {
+const ObtenerMedicamentos = async (req, res) => {
     try {
-        const medicamentos = await Medicamentos.find({ stock: { $lt: 50 } });
-        return medicamentos.map((medicamento) => medicamento.stock);
+        const client = new MongoClient(url, { useNewUrlParser: true });
+        await client.connect();
+        const db = client.db('farmaciaCampus');
+        const medicamentosCollection = db.collection('Medicamentos'); // Usa la conexión a la base de datos de Server.js
+
+        // Consulta los medicamentos con stock menor a 50
+        const medicamentos = await medicamentosCollection.find({ stock: { $lt: 50 } }).toArray();
+
+        // Envia una respuesta JSON con los medicamentos
+        res.json({ medicamentos });
     } catch (error) {
-        // Manejar errores aquí
+        console.error('Error al obtener el stock:', error);
+        // Envía una respuesta de error
+        res.status(500).json({ error: 'Error al obtener el stock.' });
     }
-}
+};
 
-const Medicamentos = ("Medicamentos", obtenerMedicamentos, "Medicamentos");
-
-module.exports = Medicamentos;
+module.exports = ObtenerMedicamentos;
