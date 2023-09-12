@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const obtenerNombresDePacientes = require('../controllers/pacientes.controllers.js');
+const obtenerNombresDePacientes = require('../controllers/Pacientes.js');
 
 const router = Router();
 

@@ -1,46 +1,46 @@
-const {Schema, model} = require('mongoose')
-const medicamentosSchema = Schema(
+
+const medicamentosSchema = (
     {
-        nombre:{
+        nombre: {
             type: String,
             required: true,
-            trim:true,
+            trim: true,
         },
-        precio:{
+        precio: {
             type: Number,
             required: true,
-            trim:true,
+            trim: true,
         },
-        stock:{
+        stock: {
             type: Number,
             required: true,
-            trim:true,
+            trim: true,
         },
-        fechaExpiracion:{
+        fechaExpiracion: {
             type: String,
             required: true,
-            trim:true,
+            trim: true,
         },
-        proveedor:{
+        proveedor: {
             type: Array,
             required: true,
-            trim:true,
+            trim: true,
         },
     },
     {
-        timestamps:true
+        timestamps: true
     }
-)
+);
 
-const medicamentos = async(req,res)=>{
+const obtenerMedicamentos = async (req, res) => {
     try {
-        const medicamentos = await medicamentosSchema.find({stock:{$lt:50}})
-        return medicamentos.map((medicamentos)=> medicamentos.stock)
+        const medicamentos = await Medicamentos.find({ stock: { $lt: 50 } });
+        return medicamentos.map((medicamento) => medicamento.stock);
     } catch (error) {
-        
+        // Manejar errores aquí
     }
 }
 
-const Medicamentos = model("Medicamentos", medicamentos, "Medicamentos");
+const Medicamentos = ("Medicamentos", obtenerMedicamentos, "Medicamentos");
 
-module.exports = Medicamentos
+module.exports = Medicamentos;

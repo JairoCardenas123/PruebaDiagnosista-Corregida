@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 
-
+const obtenerMedicamentos = require('../routes/medicamentos-50.routes.js')
 
 
 
@@ -22,10 +22,14 @@ class Server{
         this.stockGet = '/api/Medicamentos'
         this.emitidasDespues = '/api/Ventas'
         this.paracetamol = '/api/Ventas' */
-
+        this.medicamentosGet = '/api/Medicamentos'
 
         // ! Middleware
         this.middlewares();
+
+        // !Routes
+
+        this.routes();
 
 
     }
@@ -41,6 +45,10 @@ class Server{
         //! EXPRESS JSON
         this.app.use(express.json());
 
+    }
+
+    routes(){
+        this.app.use(this.medicamentosGet, obtenerMedicamentos)
     }
 
 
