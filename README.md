@@ -1,8 +1,310 @@
 # 1 ENDPOINT
 
+Obtener todos los medicamentos con menos de 50 unidades en stock.
+--
+
+http://localhost:8000/usuarios/endpoint1
+
+# 2 ENDPOINT
+
+Listar los proveedores con su información de contacto en medicamentos.
+--
+
+http://localhost:8000/usuarios/endpoint2
+
+# 3 ENDPOINT
+
+Medicamentos comprados al ‘Proveedor A’.
+--
+
+http://localhost:8000/usuarios/endpoint3
+
+
+# 4 ENDPOINT
+
+Obtener recetas médicas emitidas después del 1 de enero de 2023.
+--
+
+http://localhost:8000/usuarios/endpoint4
+
+
+# 5 ENDPOINT
+
+Total de ventas del medicamento ‘Paracetamol’.
+--
+
+http://localhost:8000/usuarios/endpoint5
+
+
+# 6 ENDPOINT
+
+Medicamentos que caducan antes del 1 de enero de 2024.
+--
+
+http://localhost:8000/usuarios/endpoint6
+
+
+# 7 ENDPOINT
+
+Total de medicamentos vendidos por cada proveedor.
+--
+
+http://localhost:8000/usuarios/endpoint7
+
+
+# 8 ENDPOINT
+
+Cantidad total de dinero recaudado por las ventas de medicamentos.
+--
+
+http://localhost:8000/usuarios/endpoint8
+
+
+# 9 ENDPOINT
+
+Medicamentos que no han sido vendidos.
+--
+
+http://localhost:8000/usuarios/endpoint9
+
+
+# 10 ENDPOINT
+
+Obtener el medicamento más caro.
+--
+
+http://localhost:8000/usuarios/endpoint10
+
+
+# 11 ENDPOINT
+
+Número de medicamentos por proveedor.
+--
+
+http://localhost:8000/usuarios/endpoint11
+
+
+# 12 ENDPOINT
+
+Pacientes que han comprado Paracetamol.
+--
+
+http://localhost:8000/usuarios/endpoint12
+
+
+# 13 ENDPOINT
+
+Proveedores que no han vendido medicamentos en el último año.
+--
+
+http://localhost:8000/usuarios/endpoint13
+
+
+# 14 ENDPOINT
+
+Obtener el total de medicamentos vendidos en marzo de 2023.
+--
+
+http://localhost:8000/usuarios/endpoint14
+
+
+# 15 ENDPOINT
+
+Obtener el medicamento menos vendido en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint15
+
+
+# 16 ENDPOINT
+
+Ganancia total por proveedor en 2023 (asumiendo un campo precioCompra en Compras).
+--
+
+http://localhost:8000/usuarios/endpoint16
+
+
+# 17 ENDPOINT
+
+Promedio de medicamentos comprados por venta.
+--
+
+http://localhost:8000/usuarios/endpoint17
+
+
+# 18 ENDPOINT
+
+Cantidad de ventas realizadas por cada empleado en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint18
+
+
+# 19 ENDPOINT
+
+Obtener todos los medicamentos que expiren en 2024.
+--
+
+http://localhost:8000/usuarios/endpoint19
+
+
+# 20 ENDPOINT
+
+Empleados que hayan hecho más de 5 ventas en total.
+--
+
+http://localhost:8000/usuarios/endpoint20
+
+
+# 21 ENDPOINT
+
+Medicamentos que no han sido vendidos nunca.  
+--
+
+http://localhost:8000/usuarios/endpoint21
+
+
+# 22 ENDPOINT
+
+Paciente que ha gastado más dinero en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint22
+
+
+# 23 ENDPOINT
+
+Empleados que no han realizado ninguna venta en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint23
+
+
+# 24 ENDPOINT
+
+Proveedor que ha suministrado más medicamentos en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint24
+
+
+# 25 ENDPOINT
+
+Pacientes que compraron el medicamento “Paracetamol” en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint25
+
+
+# 26 ENDPOINT
+
+Total de medicamentos vendidos por mes en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint26
+
+
+# 27 ENDPOINT
+
+Empleados con menos de 5 ventas en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint27
+
+
+# 28 ENDPOINT
+
+Número total de proveedores que suministraron medicamentos en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint28
+
+
+# 29 ENDPOINT
+
+Proveedores de los medicamentos con menos de 50 unidades en stock.
+--
+
+http://localhost:8000/usuarios/endpoint29
+
+
+# 30 ENDPOINT
+
+Pacientes que no han comprado ningún medicamento en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint30
+
+
+# 31 ENDPOINT
+
+Medicamentos que han sido vendidos cada mes del año 2023.
+--
+
+http://localhost:8000/usuarios/endpoint31
+
+
+# 32 ENDPOINT
+
+Empleado que ha vendido la mayor cantidad de medicamentos distintos en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint32
+.
+
+# 33 ENDPOINT
+
+Total gastado por cada paciente en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint33
+
+
+# 34 ENDPOINT
+
+Medicamentos que no han sido vendidos en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint34
+
+
+# 35 ENDPOINT
+
+Proveedores que han suministrado al menos 5 medicamentos diferentes en 2023.
+--
+
+http://localhost:8000/usuarios/endpoint35
+
+
+# 36 ENDPOINT
+
+Total de medicamentos vendidos en el primer trimestre de 2023.
+--
+
+http://localhost:8000/usuarios/endpoint36
+
+
+# 37 ENDPOINT
+
+Empleados que no realizaron ventas en abril de 2023.
+--
+
+http://localhost:8000/usuarios/endpoint37
+
+
+# 38 ENDPOINT
+
+Medicamentos con un precio mayor a 50 y un stock menor a 100.
+--
+
+http://localhost:8000/usuarios/endpoint38
 
 
 
+#######################################################################3
+#######################################################################3
+#######################################################################3
+#######################################################################3
 
 
 //////////////////////////////////////////////////////////////////
