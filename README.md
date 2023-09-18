@@ -1194,12 +1194,6 @@ router.get('/endpoint29',async(req,res)=>{
 
 
 
-Mira en el JSON medicamentos y en el JSON Ventas, mira los "nombres" de cada medicamento de cada JSON y si hay alguna que no este en la otra mandamelo en un array
-
-Medicamentos que no han sido vendidos en 2023.
-
-
-
 
 
 
